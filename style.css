@@ -1,194 +1,277 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  body,
-  html {
-    height: 100%;
-    background: #f5f5f5;
-  }
-  .container-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  background: #f5f5f5;
+}
+.container-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+.full-screen-box {
+  width: 100%;
+  height: 90vh;
+  border: 2.5px solid black;
+  display: flex;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
   .full-screen-box {
-    width: 100%;
-    height: 90vh;
-    border: 2.5px solid black;
-    display: flex;
-    overflow: hidden;
+    width: 48%;
   }
-  @media (min-width: 992px) {
-    .full-screen-box {
-      width: 48%;
-    }
-  }
-  .left-section {
-    width: 30%;
-    height: 100vh;
-    background: #dedcdc;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
-    color: white;
-  }
+}
+.left-section {
+  width: 30%;
+  height: 100vh;
+  background: #dedcdc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+  color: white;
+}
 
-  .logo-box {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 20%;
-    background: #dedcdc;
-    color: rgb(131, 125, 125);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    clip-path: polygon(0 0, 200% 100%, 85% 100%, 0 100%);
-    border-bottom: 2px solid rgb(148, 144, 144);
-  }
-  .photo-icon {
-    font-size: 50px;
-  }
-  .right-section {
-    width: 70%;
-    background: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding-top: 4rem;
-  }
- 
-  .para {
-    margin: 1rem;
-    width: 90%;
-    height: 20%;
-    background: #dedcdc;
-  }
+.logo-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: #dedcdc;
+  color: rgb(131, 125, 125);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  clip-path: polygon(0 0, 200% 100%, 85% 100%, 0 100%);
+  border-bottom: 2px solid rgb(148, 144, 144);
+  font-size: 1.8rem;
+  padding-top: 3rem;
+}
+.photo-icon {
+  font-size: 50px;
+}
+.right-section {
+  width: 70%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 4rem;
+}
 
+.para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  margin: 1rem;
+  width: 90%;
+  height: 20%;
+  background: #dedcdc;
+}
 
-  .layout-2 .box-1 {
-   
-    width: 80%;
-    height: 15%;
-    background: #dedcdc;
-  }
-  .layout-2 .box-2 {
-   margin-top: 3rem;
-    width: 80%;
-    height: 60%;
-    background: #dedcdc;
-  }
-  .layout-3 .box-1 {
-    width: 80%;
-    height: 15%;
-    background: #dedcdc;
-  }
+.layout-2 .box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  width: 80%;
+  height: 15%;
+  background: #dedcdc;
+}
+.layout-2 .box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  margin-top: 3rem;
+  width: 80%;
+  height: 60%;
+  background: #dedcdc;
+}
+.layout-3 .box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  width: 80%;
+  height: 15%;
+  background: #dedcdc;
+}
+.layout-3 .box-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  margin-top: 5rem;
+  width: 80%;
+  height: 30%;
+  background: #dedcdc;
+}
+.layout-3 .box-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  width: 80%;
+  height: 30%;
+  background: #dedcdc;
+}
+@media (max-width: 768px) {
   .layout-3 .box-2 {
-    margin-top: 5rem;
-    width: 80%;
-    height: 30%;
-    background: #dedcdc;
+    margin-top: 3rem;
   }
-  .layout-3 .box-3 {
-    
-    width: 80%;
-    height: 30%;
-    background: #dedcdc;
-  }
-  .layout-4 .box-1 {
-   
-    width: 80%;
-    height: 15%;
-    background: #dedcdc;
-  }
-  .layout-4 .box-2 {
-    margin-top: 5.5rem;
-    width: 80%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 10px;
-  }
-  .one {
-    width: 100%;
-    height: 120px;
-    background: lightgrey;
-  }
+}
 
+.layout-4 .box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  width: 80%;
+  height: 15%;
+  background: #dedcdc;
+}
+.layout-4 .box-2 {
+  margin-top: 5.5rem;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+.one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  width: 100%;
+  height: 120px;
+  background: lightgrey;
+}
 
-  .layout-5 .box-1 {
-    width: 80%;
-    height: 15%;
-    background: #dedcdc;
-  }
+.layout-5 .box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  width: 80%;
+  height: 15%;
+  background: #dedcdc;
+}
+.hexagonal-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 5rem;
+  justify-content: center;
+}
+
+.hexagonal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  width: 80px;
+  height: 90px;
+  background: lightgrey;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+@media (max-width: 768px) {
   .hexagonal-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 10px;
-    margin-top: 5rem;
-    justify-content: center;
+    margin-top: 2.5rem;
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .hexagonal {
-    width: 80px;
-    height: 90px;
-    background: lightgrey;
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-  }
-  
-  @media (max-width: 768px) {
-    .hexagonal-container {
-      grid-template-columns: repeat(2, 1fr); 
-    }
-  }
-  
-  .layout-5 .box-3 {
-    margin-top: 1rem;
-    width: 80%;
-    height: 25%;
-    background: #dedcdc;
-  }
+}
 
+.layout-5 .box-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  margin-top: 1rem;
+  width: 80%;
+  height: 25%;
+  background: #dedcdc;
+}
 
-  .layout-6 .box-1 {
-   
-    width: 80%;
-    height: 15%;
-    background: #dedcdc;
-  }
+.layout-6 .box-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  width: 80%;
+  height: 15%;
+  background: #dedcdc;
+}
+.layout-6 .box-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.image,
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: rgb(131, 125, 125);
+  font-weight: 600;
+  width: 45%;
+  height: 270px;
+  background: lightgrey;
+}
+
+@media (max-width: 768px) {
   .layout-6 .box-2 {
-    display: flex;
-    flex-direction: row; 
-    gap: 10px;
-    width: 100%;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 4rem;
+    width: 80%;
+    margin-top: 1rem;
   }
-  
-  .image, .text {
-    width: 45%; 
-    height: 270px;
-    background: lightgrey;
+  .image,
+  .text {
+    width: 100%;
+    height: 190px;
   }
-  
-  @media (max-width: 768px) {
-    .layout-6 .box-2 {
-      flex-direction: column; 
-      align-items: center;
-      width: 80%;
-    }
-    .image, .text {
-      width: 100%; 
-    }
-  }
-  
+}
